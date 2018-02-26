@@ -23,6 +23,11 @@ namespace TaskbarApp.WPF
         public MainWindow()
         {
             InitializeComponent();
+
+            // TaskbarIcon(V)のShowBalloonTipメソッドをMainWindowViewModel(VM)に公開する。
+            // MainWindowViewModelはそのメソッドを受け取るデリゲートをプロパティとして公開している。
+            var vm = this.DataContext as MainWindowViewModel;
+            vm.ShowBalloonTip = TaskbarIcon.ShowBalloonTip;
         }
     }
 }
