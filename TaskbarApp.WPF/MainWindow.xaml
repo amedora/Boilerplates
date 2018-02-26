@@ -7,6 +7,9 @@
         xmlns:local="clr-namespace:TaskbarApp.WPF"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525" ShowInTaskbar="False" WindowState="Minimized" Opacity="0" AllowsTransparency="True" WindowStyle="None">
+    <Window.DataContext>
+        <local:MainWindowViewModel />
+    </Window.DataContext>
     <Grid>
         <tb:TaskbarIcon x:Name="TaskbarIcon"
             IconSource="/Icons/TaskbarIcon.ico"
