@@ -6,7 +6,7 @@
         xmlns:tb="http://www.hardcodet.net/taskbar"
         xmlns:local="clr-namespace:TaskbarApp.WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="350" Width="525" ShowInTaskbar="False" WindowState="Minimized" Opacity="0" AllowsTransparency="True" WindowStyle="None">
     <Grid>
         <tb:TaskbarIcon x:Name="TaskbarIcon"
             IconSource="/Icons/TaskbarIcon.ico"
